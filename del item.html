@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+    <head>
+        <title>inventory display</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+                   @media only screen and (max-width: 744px) {
+      input[type=password],input[type=email]
+      {
+        width: 80%;
+      }
+    }
+  .container {
+        display: flex;
+      }
+            header {
+          background-color:rgb(161, 161, 161);
+          padding: 10px 30px;
+          height: 100px;
+          font-size: 35px;
+        }
+        #bold{
+          font-weight: 600;
+          font-size: large;
+        }
+        article {
+            
+          padding: 20px;
+          width:auto;
+          background-color: rgb(241, 113, 8);
+          height:480px ; 
+         
+        }
+        .text{
+            padding-left: 15%;
+            padding-top: 0%;
+            text-align: justify;
+            
+            text-shadow:2px 2px honeydew;
+         
+        
+        }
+        div.c{ 
+            display: block;
+            text-align: left;
+            margin: 5px 500px;
+          
+ 
+        }
+        div{
+            float: left;
+        }
+        div.a{
+            padding-left: 30%;
+        }
+        div.b{
+            padding-left: 33%;
+            margin-top: 3%;
+        }
+       
+            .image{
+                width: 100px;
+                float: left;
+                height: 100px;
+                border: 2px solid;
+                border-radius: 500px;
+                
+            }
+            p.a{
+                float: left;
+                text-align: left;
+                font-size: 15px;
+                font-style: italic;
+                text-decoration: underline;
+            }
+            .back{
+            float: right;    
+        border:2px solid ;
+        width: 100px;
+        height: 20px;
+        text-align: center;
+        font-style: italic;
+        font-size: 17px;
+        margin-top: 10%;
+        margin-left: 70%;
+        
+            }
+             
+            .form{
+              
+                display: inline block;
+                margin-left: 20px 500px;
+              
+                text-align: left;
+                
+            }
+        
+        
+ 
+        </style>
+ 
+    </head>
+    <body>
+        <header>
+            <div >
+        <img  class="image" src="logo.jpg" alt="logo">
+        </div>
+        <div class="a">
+        <h3 class="text">INVENTORY</h3>
+        </div>
+        <div class="b">
+            <p class="back"><a href="inventory.html"> back</a></p>
+        </div>
+        </header>
+        <article>
+           <div class="c">
+            <label id="bold">Enter the details of the part you want to delete: </label>
+            <br></br>
+            <form action="/inventory_page.php"; onsubmit="return confirm('Do you really want to delete this item?');" >
+              <label class="form">Group: </label>
+              <input type="text" size="26">
+              <br></br>
+             <br></br>
+              
+              <label class="form">Part number: </label>
+              <input type="text" size="21">
+              <br></br>
+              <br></br>
+              
+              <label class="form">Part name: </label>
+              <input type="text" size="23">
+              <br></br>
+              <br></br>
+              
+               <label class="form">QPU: </label>
+              <input type="text" size="28">
+              <br></br>
+              <br></br>
+              
+ 
+              <label class="form">Category: </label>
+              <input type="text" size="24">
+              <br></br>
+              <br></br>
+              
+ 
+              <label class="form">Price: </label>
+              <input type="text" size="28">
+              <br></br>
+           
+              
+              <input type="submit" value="Submit" style="float: right;">
+            </form>
+          </div>
+            
+        
+            
+        </article>
+        
+    </body>
+</html>

@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+    <head>
+        <title>inventory display</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+             @media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  h3.text{
+         position: relative;
+         font-size: 30px;
+         margin-left: 0px;
+     }
+     div.a{
+         position: relative;
+         margin-left: 0px;     }
+         .back{
+             margin-left: 0px;
+         }
+
+}
+.container{
+    display: flex;
+}
+            header {
+          background-color:rgb(161, 161, 161);
+          padding: 10px 30px;
+          height: 100px;
+          font-size: 35px;
+        }
+        
+        article {
+            
+          padding: 20px;
+          width:auto;
+          background-color: rgb(241, 113, 8);
+          height:auto; 
+        }
+        .text{
+            position: relative;
+            text-align: center;
+            text-shadow:2px 2px honeydew;
+        
+        }
+        div{
+        }
+        div.a{
+            padding-left: 30%;
+        }
+       
+            .image{
+                width: 100px;
+                float: left;
+                height: 100px;
+                border: 2px solid;
+                border-radius: 500px;
+                
+            }
+            p.a{
+                float: left;
+                text-align: left;
+                font-size: 15px;
+                font-style: italic;
+                text-decoration: underline;
+            }
+            .back{
+            float: right;  
+        width: 100px;
+        height: 20px;
+        text-align: center;
+        font-style: italic;
+        font-size: 20px;
+        margin-left: 70%;
+        
+            }
+             .s1{
+           
+           float: right; 
+        border:2px solid ;
+        width: 100px;
+        height: 23px;
+        text-align: center;
+        font-style: italic;
+        font-size: 17px;
+        margin-top: 0%;
+        margin-left: 70%;
+        
+            }
+             .s2{
+            float: right;    
+        border:2px solid ;
+        width: 100px;
+        height: 23px;
+        text-align: center;
+        font-style: italic;
+        font-size: 17px;
+        margin-top: 0%;
+        margin-left: 70%;
+        
+            }
+             .add{
+            float: right;    
+        border:2px solid ;
+        width: 100px;
+        height: 23px;
+        text-align: center;
+        font-style: italic;
+        font-size: 17px;
+        margin-top: 0%;
+        margin-left: 70%;
+        
+            }
+             .del{
+            float: right;    
+        border:2px solid ;
+        width: 100px;
+        height: 23px;
+        text-align: center;
+        font-style: italic;
+        font-size: 17px;
+        margin-top: 0%;
+        margin-left: 70%;
+        
+            }
+            .upd{
+            float: right;    
+        border:2px solid ;
+        width: 100px;
+        height: 23px;
+        text-align: center;
+        font-style: italic;
+        font-size: 17px;
+        margin-top: 0%;
+        margin-left: 70%;
+        
+            }
+            .form{
+                padding: 2 px;
+            }
+            th{
+                text-align: center;
+                font-weight: bold;
+          background-color:rgb(190, 190, 190);
+            }
+            td{
+                
+          background-color:rgb(190, 190, 190);
+            }
+            table{
+                margin-top: 15px;
+            }
+            input[type=text]
+           {padding: 6px;
+            width: 100%;
+            box-sizing: border-box;
+             background-color: rgb(190, 190, 190);
+            border: 2px solid darkslategray;}
+ 
+        a{color:grey;
+        font-weight: bold;}
+        </style>
+ 
+    </head>
+    <body >
+        <header class="container">
+            <div >
+        <img  class="image" src="logo.jpg" alt="logo">
+        </div>
+        <div class="a">
+        <h3 class="text">INVENTORY</h3>
+        </div>
+        
+        </header>
+        <article>
+                <p class="back"><a href="welcome.html"> back</a></p>
+            <br>
+            <form >
+                <label class="form">Search by brand name:</label>
+                <input type="text">
+                <button type="button" class="s1">Search</button>
+               <br></br>
+                <br></br>
+                <label>Search by product name:</label>
+                <input type="text">
+                 <button  type="button" class="s2">Search</button>
+                <br></br>
+                <br></br>
+                <label class="form">Add new product:</label>
+                <input type="text">
+                
+                <p class="add"><a href="add item.html"> Add</a></p>
+                <br></br>
+                <br></br>
+                 <label class="form">Delete existing product:</label>
+                <input type="text">
+                <p class="del"><a href="del item.html"> Delete</a></p>
+                <br></br>
+                <br></br>
+                <label class="form">Update existing product:</label>
+                <input type="text">
+                <p class="upd"><a href="upd item.html">Update </a></p>
+                <br></br>
+                <br></br>
+            </form>
+           
+            
+        
+            <table width="100%" border="1px" >
+                <tr>
+                    <th >
+                        Group
+                    </th>
+                    <th >
+                        Part Number
+                    </th>
+                    <th  colspan="3">
+                        Part Name
+                    </th>
+                    <th >
+                        QPU
+                    </th>
+                    
+                    <th >
+                        Category
+                    </th>
+                    <th>
+                      Price
+                    </th>
+                </tr>
+                <tr>
+                    <td>xxxxx </td>
+                    <td colspan=3> xxxxx  </td>
+                    <td> xxxxx  </td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                </tr>
+                <tr>
+                    <td>xxxxx </td>
+                    <td colspan=3> xxxxx  </td>
+                    <td> xxxxx  </td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                </tr><tr>
+                    <td>xxxxx </td>
+                    <td colspan=3> xxxxx  </td>
+                    <td> xxxxx  </td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                </tr><tr>
+                    <td>xxxxx </td>
+                    <td colspan=3> xxxxx  </td>
+                    <td> xxxxx  </td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                </tr>
+                 </tr><tr>
+                    <td>xxxxx </td>
+                    <td colspan=3> xxxxx  </td>
+                    <td> xxxxx  </td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                </tr>
+        </article>
+    </body>
+    </html>
+        
