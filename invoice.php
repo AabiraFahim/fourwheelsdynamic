@@ -135,7 +135,7 @@
                 background-color:rgb(148, 146, 146); 
   color: white;
             }
-            input[type=text ].a{
+            input[type=text ].a,select{
                 background-color:rgb(163, 162, 162) ;
                 width: 99%;
                 border: none ;
@@ -225,7 +225,7 @@
                 <tbody>
                 <tr>
                     <td name="sno" >1</td>
-                    <td colspan=3 ><input type="text" name="product[]" class="a"></td>
+                    <td colspan=3><select name='product[]' ><option value=''>Select product</option><?php echo"options()"; ?></select></td>
                     <td ><input type="text" class="a" name="price[]"></td>
                     <td ><input type="text" class="a" name="quantity[]"></td>
                     <td ><input type="text" class="a" name="amount[]"></td>
@@ -259,7 +259,7 @@
         $(document).ready(function () {
             $(".add").click(function () {
                 
-                markup = "<tr><td>"+sno+"</td>\ <td colspan=3><input type='text' class='a'></td> <td><input type='text' class='a'></td> <td><input type='text' class='a'></td> <td><input type='text' class='a'></td> </tr>";
+                markup = "<tr><td>"+sno+"</td><td colspan=3><select name='product[]' ><option value=''>Select product</option><?php echo"options()"; ?></select></td> <td><input type='text' class='a'></td> <td><input type='text' class='a'></td> <td><input type='text' class='a'></td> </tr>";
                 tableBody = $('#main > tbody:last ' );
                 tableBody.append(markup);
                 sno++;
@@ -275,4 +275,19 @@
         </article>
         
     </body>
+    <?php
+        function options()
+        {
+            
+        include "connection.php";  // Using database connection file here
+        $records = mysqli_query($conn, "SELECT Part_Name From inventory");  // Use select query here 
+
+        while($data = mysqli_fetch_array($records))
+        {
+            $output="<option>" . $data{'Part_Name'} . "</option>";  // displaying data in option menu
+        }	
+        return $output;
+
+}
+    ?>
     </html>
